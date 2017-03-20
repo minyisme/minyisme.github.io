@@ -37,15 +37,7 @@ def about():
 
 
 
-@app.route('/projects', methods=["GET"])
-def projects():
-    """Profile page"""
-
-    return render_template("projects.html")
-
-
-
-@app.route('/projects/fare-share', methods=["GET"])
+@app.route('/fare-share', methods=["GET"])
 def fare_share():
     """Fare Share project page"""
 
@@ -53,7 +45,7 @@ def fare_share():
 
 
 
-@app.route('/projects/skater-workout-generator', methods=["GET"])
+@app.route('/skater-workout-generator', methods=["GET"])
 def skate():
     """Skate project page"""
 
@@ -61,7 +53,7 @@ def skate():
 
 
 
-@app.route('/projects/amelia', methods=["GET"])
+@app.route('/amelia', methods=["GET"])
 def amelia():
     """Amelia project page"""
 
@@ -69,7 +61,7 @@ def amelia():
 
 
 
-@app.route('/projects/portfolio', methods=["GET"])
+@app.route('/portfolio', methods=["GET"])
 def portfolio():
     """Portfolio project page"""
 
