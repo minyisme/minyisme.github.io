@@ -29,42 +29,23 @@ def contact():
 
 
 
-@app.route('/left', methods=["GET"])
-def left():
+@app.route('/about', methods=["GET"])
+def about():
+    """About me page"""
+
+    return render_template("about.html")
+
+
+
+@app.route('/projects', methods=["GET"])
+def projects():
     """Profile page"""
 
-    return render_template("left-sidebar.html")
+    return render_template("projects.html")
 
 
 
-@app.route('/right', methods=["GET"])
-def right():
-    """Profile page"""
-
-    return render_template("right-sidebar.html")
-
-
-
-@app.route('/no', methods=["GET"])
-def no():
-    """Profile page"""
-
-    return render_template("no.html")
-
-
-
-
-
-
-@app.route('/profile', methods=["GET"])
-def profile():
-    """Profile page"""
-
-    return render_template("profile.html")
-
-
-
-@app.route('/fare-share', methods=["GET"])
+@app.route('/projects/fare-share', methods=["GET"])
 def fare_share():
     """Fare Share project page"""
 
@@ -72,7 +53,7 @@ def fare_share():
 
 
 
-@app.route('/skater-workout-generator', methods=["GET"])
+@app.route('/projects/skater-workout-generator', methods=["GET"])
 def skate():
     """Skate project page"""
 
@@ -80,7 +61,7 @@ def skate():
 
 
 
-@app.route('/amelia', methods=["GET"])
+@app.route('/projects/amelia', methods=["GET"])
 def amelia():
     """Amelia project page"""
 
@@ -88,7 +69,7 @@ def amelia():
 
 
 
-@app.route('/portfolio', methods=["GET"])
+@app.route('/projects/portfolio', methods=["GET"])
 def portfolio():
     """Portfolio project page"""
 

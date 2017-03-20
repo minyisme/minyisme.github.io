@@ -1,210 +1,164 @@
-<!DOCTYPE HTML>
-<!--
-    Twenty by HTML5 UP
-    html5up.net | @ajlkn
-    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-    <head>
-        <title>Maggie Min Yang</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <!--[if lte IE 8]><script src="/static/js/ie/html5shiv.js"></script><![endif]-->
-        <link rel="stylesheet" href="/static/css/main.css" />
-        <!--[if lte IE 8]><link rel="stylesheet" href="/static/css/ie8.css" /><![endif]-->
-        <!--[if lte IE 9]><link rel="stylesheet" href="/static/css/ie9.css" /><![endif]-->
+{% extends 'base.html' %}
+{% block content %}
 
-        <!-- Scripts -->
-        <script src="/static/js/jquery.min.js"></script>
-        <script src="/static/js/jquery.dropotron.min.js"></script>
-        <script src="/static/js/jquery.scrolly.min.js"></script>
-        <script src="/static/js/jquery.scrollgress.min.js"></script>
-        <script src="/static/js/skel.min.js"></script>
-        <script src="/static/js/util.js"></script>
-        <!--[if lte IE 8]><script src="/static/js/ie/respond.min.js"></script><![endif]-->
-        <script src="/static/js/main.js"></script>
-
-    </head>
-    <body class="index">
-        <div id="page-wrapper">
-
-            <!-- Header -->
-                <header id="header" class="alt">
-                    <h1 id="logo"><a href="/">Welcome</a></h1>
-                    <nav id="nav">
+    <!-- Header -->
+        <header id="header" class="alt">
+            <h1 id="logo"><a href="/">Welcome</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li class="current"><a href="#about-me">About Me</a></li>
+                    <li class="submenu">
+                        <a href="#">Projects</a>
                         <ul>
-                            <li class="current"><a href="/">About Me</a></li>
-                            <li class="submenu">
-                                <a href="#">Projects</a>
-                                <ul>
-                                    <li><a href="/fare-share">Fare Share</a></li>
-                                    <li><a href="/skater-workout-generator">Skate Workout</a></li>
-                                    <li><a href="/amelia">Amelia</a></li>
-                                    <li><a href="/portfolio">Portfolio</a></li>
-                                </ul>
-                            </li>
-                            <li class="current"><a href="/">Contact</a></li>
+                            <li><a href="/fare-share">Fare Share</a></li>
+                            <li><a href="/skater-workout-generator">Skate Workout</a></li>
+                            <li><a href="/amelia">Amelia</a></li>
+                            <li><a href="/portfolio">Portfolio</a></li>
                         </ul>
-                    </nav>
+                    </li>
+                    <li class="current"><a href="/static/MaggieMinYangResume.pdf">CV</a></li>
+                    <li class="current"><a href="#cta">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+    <!-- Banner -->
+        <section id="banner">
+
+            <!--
+                ".inner" is set up as an inline-block so it automatically expands
+                in both directions to fit whatever's inside it. This means it won't
+                automatically wrap lines, so be sure to use line breaks where
+                appropriate (<br />).
+            -->
+            <div class="inner">
+
+                <header>
+                    <h2>Maggie Min Yang</h2>
                 </header>
+                <p><strong><!--[-->Software Engineer<!--]--></strong></p>                       
+                <br />
+                <footer>
+                    <ul class="buttons vertical">
+                        <li><a href="#projects" class="button fit scrolly"><!--[-->Projects<!--]--></a></li>
+                    </ul>
+                </footer>
 
-            <!-- Banner -->
-                <section id="banner">
+            </div>
 
-                    <!--
-                        ".inner" is set up as an inline-block so it automatically expands
-                        in both directions to fit whatever's inside it. This means it won't
-                        automatically wrap lines, so be sure to use line breaks where
-                        appropriate (<br />).
-                    -->
-                    <div class="inner">
+        </section>
 
-                        <header>
-                            <h2>Maggie Min Yang</h2>
-                        </header>
-                        <p><strong><!--[-->Software Engineer<!--]--></strong></p>                       
-                        <br />
-                        <footer>
-                            <ul class="buttons vertical">
-                                <li><a href="#projects" class="button fit scrolly"><!--[-->Projects<!--]--></a></li>
-                            </ul>
-                        </footer>
-
-                    </div>
-
-                </section>
-
-            <!-- Main -->
-                <article id="main">
-
-                    <header class="special container">
-                        <span class="icon fa-laptop"></span>
-                        <h2><!--[-->About Me<!--]--></h2>
-                    </header>
-
-                    <!-- One -->
-                        <section class="wrapper style2 container special-alt">
-                            <div class="row 50%">
-                                <div class="8u 12u(narrower)">
-
-                                    <p>I am a software engineer currently located in the San Francisco Bay Area. After graduating from Berkeley in 2010, I became a Program Manager for Compliance and Fraud related programs at Visa. Through working closely with developers, I found my own passion in software development. In 2016, I completed Hackbright Academy's intensive software engineer fellowship. Check out my projects below!</p>
-                                    <footer>
-                                        <ul class="buttons">
-                                            <li><a href="#" class="button">Find Out More</a></li>
-                                        </ul>
-                                    </footer>
-
-                                </div>
-                                <div class="4u 12u(narrower) important(narrower)">
-
-                                    <img id="profile-image" src="/static/images/profile.jpg" alt="" />
-
-                                </div>
-                            </div>
-                        </section>
-
-                    <header id = "projects" class="special container">
-                        <span class="icon fa-bar-chart-o"></span>
-                        <h2><!--[-->Projects<!--]--></h2>
-                    </header>
+    <!-- Main -->
+        <article id="main">
 
 
-                    <!-- Three -->
-                        <section class="wrapper style3 container special">
+            <header id = "about-me" class="special container">
+                <span class="icon fa-laptop"></span>
+                <h2><!--[-->About Me<!--]--></h2>
+            </header>
 
-                            <div class="row">
-                                <div class="6u 12u(narrower)">
+            <!-- One -->
+                <section class="wrapper style2 container special-alt">
+                    <div class="row 50%">
+                        <div class="8u 12u(narrower)">
 
-                                    <section>
-                                        <a href="#" class="image featured"><img src="/static/images/fare-share.png" alt="" /></a>
-                                        <header>
-                                            <h3><!--[-->Fare Share<!--]--></h3>
-                                        </header>
-                                        <p>A web app built for friends living in different cities who want to travel together.The app uses the Google Flights API to find the cheapest dates/destinations combinations for those traveling from different origins.</p>
-                                    </section>
-
-                                </div>
-                                <div class="6u 12u(narrower)">
-
-                                    <section>
-                                        <a href="#" class="image featured"><img src="/static/images/skate.png" alt="" /></a>
-                                        <header>
-                                            <h3><!--[-->Skate Workout Generator<!--]--></h3>
-                                        </header>
-                                        <p>A web app built for figure skaters who want a set of skating exercises to work on during their time on the ice. It allows a user to easily enter some parameters to auto generate an appropriate workout.</p>
-                                    </section>
-
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="6u 12u(narrower)">
-
-                                    <section>
-                                        <a href="#" class="image featured"><img src="/static/images/amelia.png" alt="" /></a>
-                                        <header>
-                                            <h3><!--[-->Amelia<!--]--></h3>
-                                        </header>
-                                        <p>A chat bot built for those seeking abortion services to easily navigate the options and procedures available to them.</p>
-                                    </section>
-
-                                </div>
-                                <div class="6u 12u(narrower)">
-
-                                    <section>
-                                        <a href="#" class="image featured"><img src="/static/images/portfolio.png" alt="" /></a>
-                                        <header>
-                                            <h3><!--[-->Portfolio<!--]--></h3>
-                                        </header>
-                                        <p>A website showcasing my tech projects. It is deployed through Github pages built on an open source template from HTML5 UP.</p>
-                                    </section>
-
-                                </div>
-                            </div>
-
-                            <footer class="major">
+                            <p>I am a software engineer currently located in the San Francisco Bay Area. After graduating from Berkeley in 2010, I became a Program Manager for Compliance and Fraud related programs at Visa. Through working closely with developers, I found my own passion in software development. In 2016, I completed Hackbright Academy's intensive software engineer fellowship. Check out my projects below!</p>
+                            <footer>
                                 <ul class="buttons">
-                                    <li><a href="#" class="button">See More</a></li>
+                                    <li><a href="/about" class="button">Find Out More</a></li>
                                 </ul>
                             </footer>
 
-                        </section>
+                        </div>
+                        <div class="4u 12u(narrower) important(narrower)">
 
-                </article>
+                            <img id="profile-image" src="/static/images/profile.jpg" alt="" />
 
-            <!-- CTA -->
-                <section id="cta">
+                        </div>
+                    </div>
+                </section>
 
-                    <header>
-                        <h2><!--[-->Ready to do <strong>something</strong>?<!--]--></h2>
-                        <p>Proin a ullamcorper elit, et sagittis turpis integer ut fermentum.</p>
-                    </header>
-                    <footer>
+
+            <header id = "projects" class="special container">
+                <span class="icon fa-bar-chart-o"></span>
+                <h2><!--[-->Projects<!--]--></h2>
+            </header>
+
+            <!-- Three -->
+                <section class="wrapper style3 container special">
+
+                    <div class="row">
+                        <div class="6u 12u(narrower)">
+
+                            <section>
+                                <a href="#" class="image featured"><img src="/static/images/fare-share.png" alt="" /></a>
+                                <header>
+                                    <h3><!--[-->Fare Share<!--]--></h3>
+                                </header>
+                                <p>A web app built for friends living in different cities who want to travel together.The app uses the Google Flights API to find the cheapest dates/destinations combinations for those traveling from different origins.</p>
+                            </section>
+
+                        </div>
+                        <div class="6u 12u(narrower)">
+
+                            <section>
+                                <a href="#" class="image featured"><img src="/static/images/skate.png" alt="" /></a>
+                                <header>
+                                    <h3><!--[-->Skate Workout Generator<!--]--></h3>
+                                </header>
+                                <p>A web app built for figure skaters who want a set of skating exercises to work on during their time on the ice. It allows a user to easily enter some parameters to auto generate an appropriate workout.</p>
+                            </section>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="6u 12u(narrower)">
+
+                            <section>
+                                <a href="#" class="image featured"><img src="/static/images/amelia.png" alt="" /></a>
+                                <header>
+                                    <h3><!--[-->Amelia<!--]--></h3>
+                                </header>
+                                <p>A chat bot built for those seeking abortion services to easily navigate the options and procedures available to them.</p>
+                            </section>
+
+                        </div>
+                        <div class="6u 12u(narrower)">
+
+                            <section>
+                                <a href="#" class="image featured"><img src="/static/images/portfolio.png" alt="" /></a>
+                                <header>
+                                    <h3><!--[-->Portfolio<!--]--></h3>
+                                </header>
+                                <p>A website showcasing my tech projects. It is deployed through Github pages built on an open source template from HTML5 UP.</p>
+                            </section>
+
+                        </div>
+                    </div>
+
+                    <footer class="major">
                         <ul class="buttons">
-                            <li><a href="#" class="button special"><!--[-->Take My Money<!--]--></a></li>
-                            <li><a href="#" class="button"><!--[-->LOL Wut<!--]--></a></li>
+                            <li><a href="/projects" class="button">Find out more</a></li>
                         </ul>
                     </footer>
 
                 </section>
 
-            <!-- Footer -->
-                <footer id="footer">
+        </article>
 
-                    <ul class="icons">
-                        <li><a href="#" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
-                        <li><a href="#" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
-                        <li><a href="#" class="icon circle fa-google-plus"><span class="label">Google+</span></a></li>
-                        <li><a href="#" class="icon circle fa-github"><span class="label">Github</span></a></li>
-                        <li><a href="#" class="icon circle fa-dribbble"><span class="label">Dribbble</span></a></li>
-                    </ul>
+    <!-- CTA -->
+        <section id="cta">
 
-                    <ul class="copyright">
-                        <li>&copy; Maggie Min Yang</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-                    </ul>
+            <header>
+                <h2><!--[-->Contact me<!--]--></h2>
+            </header>
+            <footer>
+                <ul class="buttons">
+                    <li><a href="https://www.linkedin.com/in/maggieminyang" class="button special"><!--[-->On LinkedIn<!--]--></a></li>
+                    <li><a href="mailto:minyisme@gmail.com" class="button special"><!--[-->By Email<!--]--></a></li>
+                </ul>
+            </footer>
 
-                </footer>
+        </section>
 
-        </div>
-
-    </body>
-</html>
+{% endblock %}

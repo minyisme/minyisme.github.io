@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<!-- Header -->
+    <header id="header">
+        <h1 id="logo"><a href="/">Welcome</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li class="submenu">
+                        <a href="#">Projects</a>
+                        <ul>
+                            <li><a href="/fare-share">Fare Share</a></li>
+                            <li><a href="/skater-workout-generator">Skate Workout</a></li>
+                            <li><a href="/amelia">Amelia</a></li>
+                            <li><a href="/portfolio">Portfolio</a></li>
+                        </ul>
+                    </li>
+                    <li class="current"><a href="/static/MaggieMinYangResume.pdf">CV</a></li>
+                    <li class="current"><a href="#cta">Contact</a></li>
+                </ul>
+            </nav>
+    </header>
+
+<!-- Main -->
+    <article id="main">
+
+        <header id = "about-me" class="special container">
+                <span class="icon fa-laptop"></span>
+                <h2><!--[-->About Me<!--]--></h2>
+            </header>
+
+            <!-- One -->
+                <section class="wrapper style2 container special-alt">
+                    <div class="row 50%">
+                        <div class="8u 12u(narrower)">
+
+                            <p>I am a software engineer currently located in the San Francisco Bay Area. After graduating from Berkeley in 2010, I became a Program Manager for Compliance and Fraud related programs at Visa. It was through being in charge of an in-house application supporting the compliance program that I worked closely with developers to translate broad business needs into technical requirements. In this experience, I found my own passion in software development. In 2016, I completed Hackbright Academy's 12 week intensive software engineer fellowship, where I built my first project, Fare Share. At Hackbright, I learned learned to develop RESTful APIs using Python and Flask, SQL databases, and asynchronous calls using AJAX and JSON. </p>
+
+                        </div>
+                        <div class="4u 12u(narrower) important(narrower)">
+
+                            <img id="profile-image" src="/static/images/profile.jpg" alt="" />
+
+                        </div>
+                    </div>
+                </section>
+
+        <!-- Two -->
+            <section class="wrapper style1 container special">
+                <div class="row">
+                    <div class="4u 12u(narrower)">
+
+                        <section>
+                            <header>
+                                <h3><!--[--><strong>Technologies</strong><!--]--></h3>
+                            </header>
+                            <p><strong>Languages</strong> | Python, JavaScript, SQL, R, HTML, CSS</p>
+                            <p><strong>Framework/Libraries</strong> | Flask, jQuery, SQLAlchemy, PostgreSQL, Jinja2, Bootstrap, motion.ai</p>
+                            <p><strong>Software/Tools</strong> | Git, Excel, Oracle BI Data Warehouse, Oracle CRM, Salesforce, JIRA, Wordpress</p>
+                        </section>
+
+                    </div>
+                    <div class="4u 12u(narrower)">
+
+                        <section>
+                            <header>
+                                <h3><!--[--><strong>Education</strong><!--]--></h3>
+                            </header>
+                            <p><strong>Hackbright Academy 2016, Fellowship in Software Engineering</strong></p>
+                            <p><strong>UC Berkeley 2010, BA Psychology</strong> Research Assistant conducting Data Analysis, Student Instructor teaching Business Maths UGBA 198</p>
+                        </section>
+
+                    </div>
+                    <div class="4u 12u(narrower)">
+
+                        <section>
+                            <header>
+                                <h3><!--[--><strong>Program Management</strong><!--]--></h3>
+                            </header>
+                            <p>Worked closely development teams to scope detailed business requirements and wireframe user experience</p>
+                            <p>Created content for quarterly webinars and worked with marketing to create email campaigns</p>
+                            <p>Internal subject matter expert including having created program policy/procedure</p>
+                        </section>
+
+                    </div>
+                </div>
+            </section>
+
+    </article>
+
+<!-- CTA -->
+    <section id="cta">
+
+        <header>
+            <h2><!--[-->Contact me<!--]--></h2>
+        </header>
+        <footer>
+            <ul class="buttons">
+                <li><a href="https://www.linkedin.com/in/maggieminyang" class="button special"><!--[-->On LinkedIn<!--]--></a></li>
+                <li><a href="mailto:minyisme@gmail.com" class="button special"><!--[-->By Email<!--]--></a></li>
+            </ul>
+        </footer>
+
+    </section>
+
+{% endblock %}
