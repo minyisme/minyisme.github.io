@@ -2382,7 +2382,7 @@
 	#banner {
 		background-attachment: scroll, scroll, scroll, fixed;
 		background-color: #645862;
-		background-image: url("static/images/light-bl.svg"), url("static/images/light-br.svg"), url("static/images/overlay.png"), url("static/images/banner.jpg");
+		background-image: url("static/images/light-bl.svg"), url("static/images/light-br.svg"), url("static/images/overlay.png"), url("banner.jpg");
 		background-position: bottom left, bottom right, top left, top center;
 		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
 		background-size: 25em, 25em, auto, cover;
