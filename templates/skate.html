@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<!-- Header -->
+    <header id="header">
+        <h1 id="logo"><a href="/">Welcome</a></h1>
+            <nav id="nav">
+                <ul>
+                	<li class="current"><a href="/about">About Me</a></li>
+                    <li class="submenu">
+                        <a href="#">Projects</a>
+                        <ul>
+                            <li><a href="/fare-share">Fare Share</a></li>
+                            <li><a href="/amelia">Amelia</a></li>
+                            <li><a href="/portfolio">Portfolio</a></li>
+                        </ul>
+                    </li>
+                    <li class="current"><a href="/static/MaggieMinYangResume.pdf">CV</a></li>
+                    <li class="current"><a href="#cta">Contact</a></li>
+                </ul>
+            </nav>
+    </header>
+
+
+<!-- Main -->
+	<article id="main">
+
+		<header class="special container">
+			<span class="icon fa-bar-chart-o"></span>
+			<h2>Figure Skater's Workout Generator</h2>
+            <p>Skating workout generator web app for skaters.</p>
+		</header>
+
+		<!-- One -->
+			<section class="wrapper style4 container">
+
+				<!-- Content -->
+					<div class="content">
+						<section>
+							<a href="#" class="image featured"><img src="/static/images/skate2.png" alt="" /></a>
+							<p>Figure Skater Workout Generator is an app built for figure skaters who want a set of skating exercises to work on during their time on the ice. It allows a user to easily enter their skating level, the amount of time they want to spend on the ice, and the type of exercises they want to do. Based on the information entered, the app will then generate a series of elements for the skater to practice.</p>
+							<a href="#" class="image featured"><img src="/static/images/skate3.png" alt="" /></a>
+							<p>Generated workout includes a warmup and cooldown</p>
+							<p>Tech Stack: Python, Flask, SQLAlchemy, PostgreSQL, JavaScript, Jinja2, HTML, CSS</p>
+							<p>You can find a more detailed walk through and full source code <a href="https://github.com/minyisme/figure-skater-s-workout-generator">here</a>.</p>
+						</section>
+					</div>
+
+			</section>
+
+	</article>
+
+<!-- CTA -->
+    <section id="cta">
+
+        <header>
+            <h2><!--[-->Contact me<!--]--></h2>
+        </header>
+        <footer>
+            <ul class="buttons">
+                <li><a href="https://www.linkedin.com/in/maggieminyang" class="button special"><!--[-->On LinkedIn<!--]--></a></li>
+                <li><a href="mailto:minyisme@gmail.com" class="button special"><!--[-->By Email<!--]--></a></li>
+            </ul>
+        </footer>
+
+    </section>
+
+{% endblock %}

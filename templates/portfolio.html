@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<!-- Header -->
+    <header id="header">
+        <h1 id="logo"><a href="/">Welcome</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li class="current"><a href="/about">About Me</a></li>
+                    <li class="submenu">
+                        <a href="#">Projects</a>
+                        <ul>
+                            <li><a href="/fare-share">Fare Share</a></li>
+                            <li><a href="/skater-workout-generator">Skate Workout</a></li>
+                            <li><a href="/amelia">Amelia</a></li>
+                        </ul>
+                    </li>
+                    <li class="current"><a href="/static/MaggieMinYangResume.pdf">CV</a></li>
+                    <li class="current"><a href="#cta">Contact</a></li>
+                </ul>
+            </nav>
+    </header>
+
+
+<!-- Main -->
+    <article id="main">
+
+        <header class="special container">
+            <span class="icon fa-bar-chart-o"></span>
+            <h2>Portfolio</h2>
+            <p>Github Pages for my portfolio website.</p>
+        </header>
+
+        <!-- One -->
+            <section class="wrapper style4 container">
+
+                <!-- Content -->
+                    <div class="content">
+                        <section>
+                            <a href="#" class="image featured"><img src="/static/images/portfolio.png" alt="" /></a>
+                            <p>You are currently visiting my portfolio project, so this is quite meta. I built this site on a Python-Flask backbone using the Twenty HTML5 Up template. This is being deployed on Github Pages.</p>
+                            <a href="#" class="image featured"><img src="/static/images/portfolio2.png" alt="" /></a>
+                            <p>Includes multiple avenues to get in touch with me.</p>
+                            <p>Tech Stack: Python, Flask, Jinja2, HTML, CSS, Github Pages</p>
+                            <p>You can find the source code <a href="https://github.com/minyisme/fare-share">here</a>.</p>
+                        </section>
+                    </div>
+
+            </section>
+
+    </article>
+
+<!-- CTA -->
+    <section id="cta">
+
+        <header>
+            <h2><!--[-->Contact me<!--]--></h2>
+        </header>
+        <footer>
+            <ul class="buttons">
+                <li><a href="https://www.linkedin.com/in/maggieminyang" class="button special"><!--[-->On LinkedIn<!--]--></a></li>
+                <li><a href="mailto:minyisme@gmail.com" class="button special"><!--[-->By Email<!--]--></a></li>
+            </ul>
+        </footer>
+
+    </section>
+
+{% endblock %}

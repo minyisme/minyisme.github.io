@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<!-- Header -->
+    <header id="header">
+        <h1 id="logo"><a href="/">Welcome</a></h1>
+            <nav id="nav">
+                <ul>
+                	<li class="current"><a href="/about">About Me</a></li>
+                    <li class="submenu">
+                        <a href="#">Projects</a>
+                        <ul>
+                            <li><a href="/fare-share">Fare Share</a></li>
+                            <li><a href="/skater-workout-generator">Skate Workout</a></li>
+                            <li><a href="/portfolio">Portfolio</a></li>
+                        </ul>
+                    </li>
+                    <li class="current"><a href="/static/MaggieMinYangResume.pdf">CV</a></li>
+                    <li class="current"><a href="#cta">Contact</a></li>
+                </ul>
+            </nav>
+    </header>
+
+
+<!-- Main -->
+	<article id="main">
+
+		<header class="special container">
+			<span class="icon fa-bar-chart-o"></span>
+			<h2>Amelia</h2>
+			<p>Chat bot to help navigate abortion access.</p>
+		</header>
+
+		<!-- One -->
+			<section class="wrapper style4 container">
+
+				<!-- Content -->
+					<div class="content">
+						<section>
+							<a href="#" class="image featured"><img src="/static/images/amelia.png" alt="" /></a>
+							<p>Amelia is a chatbot that will guide users through personalized information regarding abortion resources. This was a hackathon project that I built with a group of developers and healthcare experts. We focused on supportive language and data privacy when planning and building this project. This project is currently being continued and merged with other hackathon projects.</p>
+							<p>Tech Stack: Python, JavaScript, motion.ai</p>
+							<p>You can chat with the bot yourself <a href="https://drmattyg.github.io/amelia_server/www/index.html">here</a>.</p>
+						</section>
+					</div>
+
+			</section>
+
+	</article>
+
+<!-- CTA -->
+    <section id="cta">
+
+        <header>
+            <h2><!--[-->Contact me<!--]--></h2>
+        </header>
+        <footer>
+            <ul class="buttons">
+                <li><a href="https://www.linkedin.com/in/maggieminyang" class="button special"><!--[-->On LinkedIn<!--]--></a></li>
+                <li><a href="mailto:minyisme@gmail.com" class="button special"><!--[-->By Email<!--]--></a></li>
+            </ul>
+        </footer>
+
+    </section>
+
+{% endblock %}
