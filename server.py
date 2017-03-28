@@ -45,7 +45,7 @@ def fare_share():
 
 
 
-@app.route('/skater-workout-generator', methods=["GET"])
+@app.route('/skate', methods=["GET"])
 def skate():
     """Skate project page"""
 
